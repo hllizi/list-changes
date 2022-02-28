@@ -6,7 +6,7 @@ function commit_hash() {
 SUBMODULE_PATHS=$(git config --file .gitmodules --get-regexp path | awk '{print $2}')
 BASE_DIR=$PWD
 
-echo "//$(commit_hash)"
+echo ".//$(commit_hash)"
 for SUBMODULE_PATH in $SUBMODULE_PATHS; do
     cd "$SUBMODULE_PATH"
     echo "$SUBMODULE_PATH//$(commit_hash)"
