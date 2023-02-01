@@ -13,7 +13,7 @@ called in a git repository, save_commits.sh outputs a list with entries of the s
 
 <module-path>//<commit-hash> 
 
-This list contains for ever submodule and the main module the commit at which the moddule currently is.
+This list contains for every submodule and the main module the commit at which the module currently is.
 
 changed.sh accepts as input a list of the kind that is the output of save_commits.sh.The output is a list of all files in all modules which are different in the current state of the repository from the state in the commit hash the module is assigned in the list.
 
